@@ -6,7 +6,7 @@
 ## ✨ Estudiante
 
 - **Nombre:** Olivera, Favio Gonzalo\*
-- **Comisión:** M2025-7 _[Modificar con su comisión, donde 7 es el número de comisión]_
+- **Comisión:** M2025-18
 
 ## 📂 Descripción del Repositorio
 
