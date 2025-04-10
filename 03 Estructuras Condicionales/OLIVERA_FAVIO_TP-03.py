@@ -14,6 +14,14 @@ else:
    mostrar por pantalla un mensaje que diga “Aprobado”; en caso contrario deberá mostrar el
    mensaje “Desaprobado”."""
 
+nota = float(input("Ingresa tu nota: "))
+if(nota >= 6 and nota <= 10):
+    print("Aprobado.")
+elif(nota < 6 and nota >= 0):
+    print("Desaprobado.")
+else:
+    print("Nota inválida. Debe estar entre 0 y 10.")
+    
 
 """3. Escribir un programa que permita ingresar solo números pares. Si el usuario ingresa un
    número par, imprimir por en pantalla el mensaje "Ha ingresado un número par"; en caso
