@@ -116,6 +116,19 @@ El programa debe transformar el nombre ingresado de acuerdo a la opción selecci
 usuario e imprimir el resultado por pantalla. Nota: investigue uso de las funciones upper(),
 lower() y title() de Python para convertir entre mayúsculas y minúsculas. """
 
+nombre = input("Ingresa tu nombre: ")
+print("Elegi una opcion: \n1. mayusculas\n2. minusculas\n3. primera letra mayuscula")
+opcion = int(input("Opcion: "))
+if(opcion == 1):
+    print(nombre.upper())
+elif(opcion == 2):
+    print(nombre.lower())
+elif(opcion == 3):
+    print(nombre.title())
+else:
+    print("Opcion no valida")   
+
+
 
 """ 9. Escribir un programa que pida al usuario la magnitud de un terremoto, clasifique la
 magnitud en una de las siguientes categorías según la escala de Richter e imprima el resultado
