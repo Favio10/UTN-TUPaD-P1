@@ -99,9 +99,12 @@ forma aleatoria.
 termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
 pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
 pantalla. """
-
-
-
+frase = input("Ingresá una palabra o frase: ")
+if(frase[-1] == "a" or frase[-1] == "e" or frase[-1] == "i" or frase[-1] == "o" or frase[-1] == "u" or frase[-1] == "A" or frase[-1] == "E" or frase[-1] == "I" or frase[-1] == "O" or frase[-1] == "U"):
+    print(frase + "!" )
+else:
+    print(frase)
+    
 
 
 """ 8. Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3
