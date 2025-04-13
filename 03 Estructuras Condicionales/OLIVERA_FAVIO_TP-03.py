@@ -45,7 +45,7 @@ siguientes categorías pertenece:
 edad = int(input("Ingresa tu edad: "))
 if(edad < 12):
     print("Niño/a")
-elif(edad >= 12 and edad <= 18):
+elif(edad >= 12 and edad < 18):
     print("Adolescente")
 elif(edad >= 18 and edad < 30):
     print("Adulto/a joven")
@@ -92,6 +92,18 @@ numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 Nota: el bloque de código anterior crea una lista con 50 números entre 1 y 100 elegidos de
 forma aleatoria.
 """
+
+import random
+from statistics import mode, median, mean
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+print("Lista de números aleatorios: ", numeros_aleatorios)
+print("Moda: ", mode(numeros_aleatorios))
+print("Mediana: ", median(numeros_aleatorios))
+print("Media: ", mean(numeros_aleatorios))
+
+
+
 
 
 
@@ -180,4 +192,31 @@ Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N
 del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
 si el usuario se encuentra en otoño, invierno, primavera o verano.  """
 
-
+print("Bienvenido al programa de estaciones del año")
+hemismerio = input("¿En qué hemisferio te encuentras? (N/S): ").upper()
+mes = int(input("¿Qué mes del año es? (1-12): "))
+dia =  int(input("Qué día es? (1-31): "))
+if(hemismerio == "N"):
+    if(mes == 12 and dia >= 21 or mes <= 3 and dia <= 20):
+        print("Tu estacion actual es Invierno")
+    elif(mes == 3 and dia >= 21 or mes <= 6 and dia <= 20):
+        print("Tu estacion actual es Primavera")
+    elif(mes == 6 and dia >= 21 or mes <= 9 and dia <= 20):
+        print("Tu estacion actual es Verano")
+    elif(mes == 9 and dia >= 21 or mes <= 12 and dia <= 20):
+        print("Tu estacion actual es Otoño")
+    else:
+        print("Fecha inválida")
+elif(hemismerio == "S"):
+    if(mes == 12 and dia >= 21 or mes <= 3 and dia <= 20):
+        print("Tu estacion actual es Verano")
+    elif(mes == 3 and dia >= 21 or mes <= 6 and dia <= 20):
+        print("Tu estacion actual es Otoño")
+    elif(mes == 6 and dia >= 21 or mes <= 9 and dia <= 20):
+        print("Tu estacion actual es Invierno")
+    elif(mes == 9 and dia >= 21 or mes <= 12 and dia <= 20):
+        print("Tu estacion actual es Primavera")
+    else:
+        print("Fecha inválida")
+else:
+    print("Hemisferio inválido. Por favor, ingrese 'N' o 'S'.")
