@@ -220,3 +220,22 @@ elif(hemismerio == "S"):
         print("Fecha inválida")
 else:
     print("Hemisferio inválido. Por favor, ingrese 'N' o 'S'.")
+
+
+dinero_en_cuenta = 100000
+
+dinero_a_retirar = float(
+input
+("Ingrese la cantidad de dinero que desea retirar: "))
+
+
+
+
+if dinero_en_cuenta > dinero_a_retirar:
+
+     dinero_en_cuenta = dinero_en_cuenta - dinero_a_retirar
+
+     print("Retiro realizado con éxito")
+else:
+
+     print("No tiene suficiente dinero en la cuenta")
